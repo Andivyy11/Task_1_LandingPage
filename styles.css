@@ -1,0 +1,163 @@
+*{
+    padding:0;
+    margin:0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+.navbar{
+    background-color: #186F65;
+}
+.logo{
+    display:inline-block;
+    margin-left:20px;
+}
+.navbar ul{
+    float:right;
+    margin:20px 25px;
+}
+ul li{
+    display: inline-block;
+    list-style: none;
+    margin:0 15px;
+}
+.navbar a{
+    text-decoration: none;
+    color:white;
+    font-weight: 500;
+    font-size: 18px;
+}
+#check,
+#check1{
+    display:none;
+}
+.bars{
+    display:none;
+    color:white;
+    float:right;
+    margin: 15px 30px;
+    font-size: 25px;
+}
+#check:checked  ~ ul{
+    display: block;
+}
+h1 ,h2{
+    color:#12544d;
+    margin:15px 0;
+}
+.top{
+    width:70%;
+    margin:30px auto;
+    background-image: url("./images/top.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: bottom;
+    color: black;
+    padding:30px;
+    color:#12544d;
+}
+.top h1{
+    font-size: 45px;
+}
+.statbox{
+    display:flex;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    width:100%;
+}
+.stats{
+    margin:10px;
+    padding:10px;
+    border-right:1px solid grey;
+}
+.top input,
+.top button{
+    border:3px solid #12544d;
+    padding:10px;
+    font-size: 18px;
+    border-radius: 5px;
+}
+.top input{
+    background-color: white;
+}
+button{
+    background-color: #12544d;
+    color:white;
+}
+.products{
+    width:80%;
+    margin:30px auto;
+}
+.slide{
+    width:100%;
+    margin-top:20px;
+    display:flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+.slide div{
+    width:200px;
+    height:250px;
+    box-shadow: 2px 2px 6px grey;
+    border-radius: 15px;
+    margin:5px;
+}
+.slide img{
+    width:100%;
+    height:80%;
+}
+.slide p{
+    padding-left:10px;
+}
+.mission ,.about {
+    width:100%;
+    padding:40px 20px;
+    height:350px;
+}
+.about{
+    background-color: #186F65;
+    color:white;
+}
+.mission{
+    background-image: url("./images/backgroung.png");
+    background-size: cover;
+}
+.mission button{
+    border-radius: 50%;
+    font-size: 30px;
+    padding:10px;
+    border:none;
+}
+.icons{
+    margin:20px;
+}
+.icons a{
+    font-size: 25px;
+    color:white;
+}
+a:hover{
+    text-shadow: 2px 2px 1pc rgb(255, 255, 255);
+}
+button:hover{
+    box-shadow: 1px 1px 2pc #2fcbb9;
+}
+@media (max-width : 670px){
+    .bars{
+        display: inline;
+    }
+    .navbar ul{
+        width:100%;
+        display: none;
+        margin: 0;
+        float:none;
+    }
+    .navbar li{
+        display: block;
+        background-color:#186F65;
+        text-align: center;
+        padding:15px;
+    }
+    .top{
+        width:100%;
+        margin:0;
+    }
+} 
